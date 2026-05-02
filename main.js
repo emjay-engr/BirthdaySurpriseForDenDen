@@ -35,7 +35,7 @@ const REASONS = [
   },
   {
     icon: "🌙",
-    title: "Your late-night conversations",
+    title: "Our late-night conversations",
     desc: "You talk to me about the universe, your dreams, your fears and every word feels like a secret shared just for us pero minsan kapag tinotoyo ka di mo ako kinakausap hmmm."
   },
   {

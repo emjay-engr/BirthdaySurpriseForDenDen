@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ✏️ CUSTOMIZE: Change the tab title here -->
+  <title>Happy Birthday,  My Denishie ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ========== FLOATING HEARTS CANVAS ========== -->
+  <canvas id="heartsCanvas"></canvas>
+
+  <!-- ========== MUSIC PLAYER ========== -->
+  <div class="music-player" id="musicPlayer">
+    <button class="music-btn" id="musicToggle" onclick="toggleMusic()" title="Play / Pause Music">
+      <span id="musicIcon">♪</span>
+    </button>
+    <span class="music-label">Our Song</span>
+    <!-- ✏️ CUSTOMIZE: Replace with your audio file path -->
+    <audio id="bgMusic" loop>
+      <source src="audio/The 1975 - About You (Official).mp3" type="audio/mpeg" />
+    </audio>
+  </div>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="nav" id="navbar">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#message">Letter</a></li>
+      <li><a href="#reasons">Reasons</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#surprise">Surprise</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <p class="hero-pre fade-in-up delay-1"> 🌷Today is a very special day 🌷</p>
+      <!-- ✏️ CUSTOMIZE: Main title -->
+      <h1 class="hero-title fade-in-up delay-2">Happy Birthday,<br /><em>Denishie</em> ❤️</h1>
+      <!-- ✏️ CUSTOMIZE: Subtitle -->
+      <p class="hero-sub fade-in-up delay-3">This little website is just for you...<br />a tiny piece of my heart, wrapped in pixels. <br/>  Please play the music button before start.</p>
+    
+      <div class="hero-date fade-in-up delay-4" id="birthdayHighlight"></div>
+      <a href="#message" class="scroll-btn fade-in-up delay-5">
+        <span>Read My Letter</span>
+        <svg viewBox="0 0 24 24"><path d="M12 16l-6-6h12z"/></svg>
+      </a>
+    </div>
+    <div class="petal-ring"></div>
+    
+  </section>
+
+  
+
+  <!-- ========== LOVE LETTER SECTION ========== -->
+  <section class="message-section" id="message">
+    <div class="section-inner">
+      <div class="letter-card">
+        <div class="letter-header">
+          <div class="wax-seal">❤</div>
+          <!-- ✏️ CUSTOMIZE: Letter greeting -->
+          <h2 class="letter-greeting">My Dearest Denishie,</h2>
+        </div>
+        <div class="letter-body" id="letterBody">
+          <!-- Text is typed in via JS — edit in js/main.js under LETTER_TEXT -->
+        </div>
+        <div class="letter-signature">
+          <!-- ✏️ CUSTOMIZE: Your sign-off -->
+          <p>With all my love, always &amp; forever,</p>
+          <p class="sig-name">Emjay ❤️</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== REASONS I LOVE YOU ========== -->
+  <section class="reasons-section" id="reasons">
+    <div class="section-inner">
+      <h2 class="section-title">Reasons Why I Love You</h2>
+      <p class="section-subtitle">Just a few of the infinite reasons…</p>
+      <div class="reasons-grid" id="reasonsGrid">
+        <!-- Cards injected by JS — edit reasons in js/main.js under REASONS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PHOTO GALLERY ========== -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-inner">
+      <h2 class="section-title">Our Memories</h2>
+      <p class="section-subtitle">Moments I'll treasure forever</p>
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Photos injected by JS — edit captions/paths in js/main.js under PHOTOS -->
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:40px;">
+  <a href="birthday-girl.html" class="scroll-btn">
+    See My Beautiful Girl 💖
+  </a>
+</div>
+  </section>
+
+  
+
+  <!-- ========== SURPRISE SECTION ========== -->
+  <section class="surprise-section" id="surprise">
+    <div class="section-inner">
+      <h2 class="section-title">One More Thing…</h2>
+      <p class="section-subtitle">Press the button if you dare 😊</p>
+      <button class="surprise-btn glow-btn" id="surpriseBtn" onclick="revealSurprise()">
+        <span class="btn-heart">💌</span>
+        <span>Open My Surprise</span>
+      </button>
+      <div class="surprise-reveal" id="surpriseReveal">
+        <div class="surprise-inner">
+          <!-- ✏️ CUSTOMIZE: Surprise hidden message -->
+          <p class="surprise-emoji">🌹</p>
+          <h3>You are my greatest gift that God give to me.</h3>
+          <p>
+            Every single day with you feels like a gift I never expected but will
+            cherish forever. Thank you for being exactly who you are, the warmth
+            in my mornings, the calm in my chaos, and the reason I smile for no
+            reason at all. Happy Birthday, my love. May God Bless you forever baby. Here's to endless chapters
+            together 🥂
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-hearts">💕</div>
+    <!-- ✏️ CUSTOMIZE: Footer message -->
+    <p>Made with every bit of love I have for you.</p>
+    <p class="footer-credit">Created by Meljun Polillo - built from scratch, just for you 💖</p>
+    <p class="footer-year" id="footerYear"></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

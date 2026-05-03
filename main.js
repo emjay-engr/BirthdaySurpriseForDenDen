@@ -46,7 +46,7 @@ const REASONS = [
   {
     icon: "😂",
     title: "The way you laugh",
-    desc: "That laugh - honest, full, completely yours - is one of my favorite sounds in the entire world second yong isa ko pang fav sound mwehehehehe."
+    desc: "That laugh - honest, full, completely yours - is one of my favorite sounds in the entire world."
   },
   {
     icon: "🌟",
